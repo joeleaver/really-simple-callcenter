@@ -1,6 +1,12 @@
 ## Really Simple Call Center
 
-This demonstrates a simple but scalable and easily-extensible call center app using Plivo ![Plivo](https://www.plivo.com/assets/dist/img/logo.png) and <img src="https://img.webmart.de/rsmq_wide.png" width=150>
+This demonstrates a simple but scalable and easily-extensible call center app using:
+
+ [Plivo](https://www.plivo.com/) ![Plivo](https://www.plivo.com/assets/dist/img/logo.png)
+
+ and
+
+ [RSMQ](https://github.com/smrchy/rsmq) <img src="https://img.webmart.de/rsmq_wide.png" width=150>
 
 ### How it Works
 This application consists of two services, a Plivo application endpoint and an RSMQ queue worker. When a caller dials in, Plivo directs the call to the application, which places the caller in a conference, then enqueues the call. The queue worker then dials an agent, specifying an application callback to add the agent to the conference.
