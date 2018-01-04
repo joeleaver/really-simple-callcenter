@@ -1,0 +1,20 @@
+{
+  "base_url": "https://yourapp/app",
+  "plivo": {
+    "auth_id": "YOUR ID HERE",
+    "auth_token": "YOUR TOKEN HERE"
+  },
+  "app": {
+    "port": 5000,
+    "enqueue_spoken_message": "Thanks for calling. Please hold for the next available representative.",
+    "hold_music_url": "absolute path to mp3 file",
+    "agent_number": "10123456789",
+    "caller_id_number": "10123456789"
+  },
+  "queue": {
+    "redis_host": "127.0.0.1",
+    "redis_port": 6379,
+    "redis_namespace": "rsmq",
+    "name": "callcenter"
+  }
+}
