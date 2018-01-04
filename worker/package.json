@@ -1,0 +1,10 @@
+{
+  "name": "callcenter-worker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "plivo": "^4.0.0-beta.1",
+    "rsmq-worker": "^0.5.2"
+  }
+}
